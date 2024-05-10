@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app'); // Certifique-se de que o caminho esteja correto
+const app = require('../app'); 
 
 describe('Testes de Rotas de Contatos', () => {
   it('Deve listar todos os contatos (GET /contatos)', async () => {

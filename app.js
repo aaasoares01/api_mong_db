@@ -6,8 +6,8 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-const contatoRouter = require('./rotas/contatosRotas');
-app.use('/contatos', contatoRouter);
+const contatoRouter = require('./routes/contatoRoutes');
+app.use('/contato', contatoRouter);
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
